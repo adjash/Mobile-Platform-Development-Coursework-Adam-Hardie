@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/splash"
+    tools:context="com.example.adam.rss.SplashScreen"
+    android:background="@drawable/my_bg_anim">
+
+    <TextView
+        android:id="@+id/txtSPLASH"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="103dp"
+        android:gravity="center"
+        android:text="Traffic Scotland RSS Reader"
+        android:textAppearance="@style/TextAppearance.AppCompat.Menu"
+        android:visibility="visible"
+        android:textColor="#ffffff"/>
+
+</RelativeLayout>

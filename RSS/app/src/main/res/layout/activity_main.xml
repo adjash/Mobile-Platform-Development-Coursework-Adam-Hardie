@@ -1,0 +1,80 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/vwSwitch"
+
+    >
+    <!---
+       Student ID:S1436108
+        Adam Hardie
+     -->
+    <!---
+    LinearLayout was used as it was the layout which I had the most success with and caused the least amount of issues.
+    -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+        <!---
+        SearchView was much like the linear view in that it was just the one which I had the most success,
+        I was originally attempting to use an edit text in order to
+        -->
+        <SearchView
+            android:id="@+id/searchView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:queryHint="Search for specific road"></SearchView>
+
+        <RadioGroup
+            android:id="@+id/radioGroup1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/r0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Current" />
+
+            <RadioButton
+                android:id="@+id/r1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Planned RoadWorks" />
+
+        </RadioGroup>
+
+        <ViewFlipper android:id="@+id/ViewFlipper01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <!--adding views to ViewFlipper-->
+            <ListView
+                android:id="@+android:id/list"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:divider="#AB9B9F"
+                android:dividerHeight="1dp"
+                android:listSelector="#27baca"></ListView>
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ListView
+                    android:id="@+id/planned"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="#AB9B9F"
+                    android:dividerHeight="1dp"
+                    android:listSelector="#AB9B9F"
+                    >
+                </ListView>
+            </android.support.constraint.ConstraintLayout>
+        </ViewFlipper>
+    </LinearLayout>
+</LinearLayout>
